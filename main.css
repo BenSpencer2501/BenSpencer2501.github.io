@@ -1,0 +1,508 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: blueviolet;
+    
+}
+.firstHeader{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    color:  orange;
+    font-family: 'Brush Script MT', cursive;
+    
+
+    
+}
+.firstHeader h1{
+    font-size: 60px;
+}
+
+.logoSpace{
+    margin: 5px;
+    height: 70px;
+    width: 70px;
+    border-radius: 60%;
+    background-color:   purple;
+}
+.logoSpace > img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    border-radius: 60%;
+    background-color: orange;
+}
+.nextToLogo{
+    width: 100%;
+ 
+}
+.pageTitle{
+    text-align: center;
+    color: orange;
+    font-size: 55px;
+    
+}
+.secHeader{
+    display: flex;
+    justify-content: space-around;
+    height: 25px;
+    background-color: rgba(128, 0, 128, 0.7);
+    color: orange;
+    font-size: small;
+}
+.mainLogo{
+    padding: 1%;
+    float: left;
+    height: 90%;
+    width: 10%;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+
+/* INDEX PAGE */
+.mainIndex{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    &::before {
+        content:"";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: url(images/header\ circle.jpg);
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.25;
+    }
+   
+}
+.mainIndex p{
+    font-family: 'Brush Script MT', cursive;
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    color: orange;
+}
+.underline{
+    text-decoration-line: overline;
+}
+.mainIndex h1{
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    font-family: 'Brush Script MT', cursive;
+    color: orange;
+    font-size: 3rem;
+}
+.miniIntro{
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1rem;
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: purple;
+    height: 25px;
+    color: orange;
+}
+footer p{
+    font-size:12px;
+}
+.navbar{    
+    background-color: purple ;
+}
+.navbar a{
+    color: orange;
+}
+
+
+/* GALLERY PAGE */
+
+
+.gallery{
+    text-align: center;
+    margin: 10px 50px;
+}
+.gallery img{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+    border-radius: 15%;
+}
+.gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.0);
+    width: 190px;
+    height: 190px;
+    border: 1px solid rgba(255, 166, 0, 0.7)
+
+}
+
+.explain{
+    text-align: center;
+    color: orange;
+    font-size: 25px;
+
+}
+h2{
+    text-align: center;
+    color: orange;
+
+}
+
+/* SHOWS PAGE */
+.firstSeg{
+    border: 1px solid rgba(128, 0, 128, 0.6);
+    height: 25%;
+    width: 100%;
+   
+}
+.secondSeg{
+    border: 1px solid rgba(128, 0, 128, 0.6);
+    height: 25%;
+    width: 100%;
+}
+.thirdSeg{
+    border: 1px solid rgba(128, 0, 128, 0.6);
+    height: 25%;
+    
+}
+.embedVideo1{
+    height: 100%;
+    width: 30%;
+    
+}
+.embedVideo2{
+    float: right;
+    height: 100%;
+    width: 30%;
+    
+}
+.textBox1{
+    overflow: auto;
+    float: right;
+    height: 100%;
+    width: 70%;
+    background-color: orange;
+    text-align: center;
+}
+.textBox2{
+    overflow: auto;
+    height: 100%;
+    width: 70%;
+    background-color: orange;
+}
+
+
+
+/* CONTACT PAGE*/
+.mainBox{
+    display: flex; 
+    flex-direction: row; 
+    width: 100%;
+    height: 100%;
+}
+
+.leftTop{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    &::before {
+        content:"";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: url(images/drivingPhoto.jpg);
+        height: auto;
+        width: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.2;
+    }
+}
+.left{
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+}
+.leftTop p {
+    font-family: 'Brush Script MT', cursive;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    color: orange;
+}
+.leftTop{
+    overflow: auto;
+    
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+.right p{
+    position: relative;
+    color: orange;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 40px;
+
+}
+.right{
+    color: orange;
+    
+}
+
+.rightTop{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+    
+    &::before {
+        content:"";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: url(images/clipBoard.png);
+        height: auto;
+        width: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.25;
+    }
+}
+.rightTop p{
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    font-size: 40px;
+    color: orange;
+    
+}
+.rightBot{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+    
+    &::before {
+        content:"";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: url(images/calendarPhoto.avif);
+        height: auto;
+        width: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.2;
+    }
+}
+.rBTop{
+    width: 100%;
+    height: 30%;
+    
+}
+.rBBot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+/* CALENDAR */
+.main {
+    width:200px;
+    border:1px solid black;
+    }
+    
+    .month {
+    background-color:black;
+    font:bold 12px verdana;
+    color:white;
+    }
+    
+    .daysofweek {
+    background-color:gray;
+    font:bold 12px verdana;
+    color:white;
+    }
+    
+    .days {
+    font-size: 12px;
+    font-family:verdana;
+    color:black;
+    background-color: lightyellow;
+    padding: 2px;
+    }
+    
+    .days #today{
+    font-weight: bold;
+    color: red;
+    }
+
+/* LESSONS PAGE  */
+
+.lessonsContainer {
+    display: flex; /* create a flex container */
+    flex-direction: row; /* set the main axis to row */
+    width: 100%;
+    height: 70%;
+    border: 1px solid orange;
+    color: orange;
+}
+.lessonsContainer a{
+    color: orange;
+    text-decoration: none;
+}
+.details{
+    font-weight: bolder;
+}
+.lessonsIntro{
+    width: 100%;
+    height: 5%;
+}
+.lessonsIntro p{
+    text-align: center;
+}
+
+.adult{
+    border: 1px solid orange;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    overflow: auto;
+    
+    
+}
+.youth{
+    border: 1px solid orange;
+ 
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    overflow: auto;
+
+    
+}
+
+.workshop{
+    border: 1px solid orange;
+    
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    overflow: auto;
+
+}
+
+.online{
+    border: 1px solid orange;
+    border-right: 1px solid orange;
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    overflow: auto;
+
+}
+.lessonTitle{
+    font-size: 25px;
+    width: 100%;
+    height: 15%;
+    text-decoration: none;
+}
+.lessonTitle :hover{
+    background-color: purple;
+}
+
+.adult > img{
+    width: 90%;
+    height: auto;
+    max-height: 25%;
+    border-radius: 10px;
+    
+}
+.youth > img{
+    width: 90%;
+    height: auto;
+    max-height: 25%;
+    border-radius: 10px;
+    
+
+}
+.workshop > img{
+    width: 90%;
+    height: auto;
+    max-height: 25%;
+    border-radius: 10px;
+    
+
+}
+.online > img{
+    width: 90%;
+    height: auto;
+    max-height: 25%;
+    border-radius: 10px;
+    
+
+}
+.oneToOne{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    border-right: 1px solid orange;
+    justify-content: center;
+    text-align: center;
+    color: orange;
+}
+.oneToOne > img{
+    width: 90px;
+    height: 90px;
+    opacity: 0.3;
+    border-radius: 30%;
+    margin-right: 10px;
+}
+
+

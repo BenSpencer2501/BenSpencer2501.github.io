@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var pageStart = LogoNHeader1()
+        document.writeln(pageStart)
+    </script>
+    
+  
+    <script>
+        var navbar = Navbar()
+        document.writeln(navbar)
+    </script>
+
+    <h1 class="pageTitle">
+        Contact Info & Opening Times 
+    </h1>
+    <div class="mainBox">
+
+        <div class="left">
+            <div class="leftTop">
+                
+                    <p>
+                        Circus mash has hundreds of locations across England, check vie the map below to see which one suit you best. We are always  easily excessable by car and bus 
+                        
+                    </p>
+                
+                    
+            </div>
+            <div class="leftBot">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.5897492169224!2d-1.8964612230016757!3d52.43223077203824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc1d9061bd77%3A0x353ee2e455dd8395!2s2%20Vicarage%20Rd%2C%20King&#39;s%20Heath%2C%20Birmingham%20B14%207RA!5e0!3m2!1sen!2suk!4v1702549180074!5m2!1sen!2suk" width="795px" height="520px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+
+        <div class="right">
+
+            <div class="rightTop">
+                <p>
+                    Each of our sessions have diffrent start and end times however we are open most days if you wish to come and talk to us. If you would like to know more about what we offer and when please have a look through the lessons page for further details.   
+                </p>
+            </div>
+
+            <div class="rightBot">
+              
+
+              <div class="rBBot">
+
+                <script>
+                    document.writeln(anOffer())
+                </script> 
+
+                <p> 
+                    opening times updated here automatically.
+                </p>
+      
+                <p>
+                    We are open 6 days a week, all year round except December
+                </p>
+
+                <div class="calenderContainer">
+                    <script type="text/javascript">
+                      var todaydate = new Date();
+                      var curmonth = todaydate.getMonth() + 1; // get current month (1-12)
+                      var curyear = todaydate.getFullYear(); // get current year
+               
+                      document.writeln(curyear);
+               
+                      document.write(buildCal(curmonth, curyear, "main", "month", "daysofweek", "days", 1));
+                  </script>
+                </div>
+
+         
+              </div>
+              
+            
+                
+                   
+                
+            </div>
+        </div>
+
+
+
+    </div>
+    
+
+    <script>
+        var footer = Footer()
+        document.writeln(footer)
+    </script>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
